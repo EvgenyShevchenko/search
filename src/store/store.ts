@@ -1,7 +1,8 @@
 import {makeAutoObservable} from 'mobx';
 
- class Store {
-    data = '';
+class Store {
+    data = []
+    error = ''
 
     constructor() {
         makeAutoObservable(this)
@@ -10,5 +11,10 @@ import {makeAutoObservable} from 'mobx';
     setDate(res: any) {
         this.data = res
     }
+
+    setError(res: any) {
+        this.error = res
+    }
 }
-export default new Store();
+
+export default new Store()
