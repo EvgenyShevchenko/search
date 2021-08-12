@@ -61,7 +61,6 @@ const Search: React.FC = observer(() => {
                             Search
                         </Button>
                     </Form.Group>
-
                 </div>
             </div>
         </Router>

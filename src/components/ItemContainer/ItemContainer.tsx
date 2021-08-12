@@ -20,10 +20,11 @@ const ItemContainer: React.FC = observer(() => {
     return (
         <Container>
             <Row className='d-flex justify-content-center align-items-center'>
-                {(Store.error !== 'Ошибка') ? Store.data.map((card, i) =>
-                    <ItemCard key={i}/>
-                ) : <div className='error mt-2 d-flex justify-content-center align-items-center'>"Ошибка введите верный
-                    запрос"</div>}
+                {(Store.error !== 'Ошибка') ? Store.data.map((item, i) =>
+                    <ItemCard card={item} key={i}/>
+                ) : <div className='error mt-2 d-flex justify-content-center align-items-center'>
+                    "Ошибка введите верный запрос"
+                </div>}
             </Row>
         </Container>
     )
