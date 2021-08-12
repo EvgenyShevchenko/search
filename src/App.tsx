@@ -15,6 +15,7 @@ function App() {
                 <Route path="/Email" exact component={ItemContainer}/>
                 <Route path="/NickName" exact component={ItemContainer}/>
                 <Route path="/Phone" exact component={ItemContainer}/>
+                <Route path="/Phone" exact component={ItemContainer}/>
             </Switch>
         </div>
     );
