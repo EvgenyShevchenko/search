@@ -1,7 +1,7 @@
 import './scss/app.scss';
 import Search from "./components/Search/Search";
 import ItemContainer from "./components/ItemContainer/ItemContainer";
-import {Router, Route, Switch} from "react-router-dom";
+import {Route, Switch} from "react-router-dom";
 
 function App() {
 
@@ -14,7 +14,6 @@ function App() {
                 <Route path="/FullName" exact component={ItemContainer}/>
                 <Route path="/Email" exact component={ItemContainer}/>
                 <Route path="/NickName" exact component={ItemContainer}/>
-                <Route path="/Phone" exact component={ItemContainer}/>
                 <Route path="/Phone" exact component={ItemContainer}/>
             </Switch>
         </div>
